@@ -5,10 +5,14 @@ import PlaygroundSupport
 
 class MyViewController : UIViewController {
     
+    // Props
     let spacer = 20
+    let cardWidth = 300
+    let cardHeight = 100
     
-    
+    // Establishing Views
     let cardView = UIView()
+    let heroView = UIView()
     let mainLabel = UILabel()
     let subLabel = UILabel()
     
@@ -16,27 +20,31 @@ class MyViewController : UIViewController {
         let view = UIView()
         view.backgroundColor = .gray
         
-        
-    
-        cardView.frame = CGRect(x:spacer, y:spacer, width: 300, height:300)
+        //Card Container
+        cardView.frame = CGRect(x:spacer, y:spacer, width: cardWidth, height:300)
         cardView.backgroundColor = .white
         cardView.layer.cornerRadius = 12
         cardView.layer.shadowOpacity = 0.25
         cardView.layer.shadowOffset = CGSize(width: 0, height: 10)
         cardView.layer.shadowRadius = 10
         
+        // Hero Container
+        heroView.frame = CGRect(x:0, y:0, width:cardWidth, height: cardHeight)
+        heroView.backgroundColor = .blue
         
-        mainLabel.frame = CGRect(x: spacer, y: spacer, width: 200, height: 30)
+        // Main Label String
+        mainLabel.frame = CGRect(x: spacer, y: (spacer+cardHeight), width: 200, height: 30)
         mainLabel.text = "This is a title"
         mainLabel.textColor = .black
         mainLabel.font = .systemFont(ofSize: 22, weight: .semibold)
         
-        subLabel.frame = CGRect(x: spacer, y: spacer*2, width: 200, height: 30)
+        // Sub Label String
+        subLabel.frame = CGRect(x: spacer, y: ((spacer*2)+cardHeight), width: 200, height: 30)
         subLabel.text = "This is a sub label and cool awesome yay"
         
-        
-        
+        // Adding subviews
         view.addSubview(cardView)
+        cardView.addSubview(heroView)
         cardView.addSubview(mainLabel)
         cardView.addSubview(subLabel)
 
