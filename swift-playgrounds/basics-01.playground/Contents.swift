@@ -9,6 +9,7 @@ class MyViewController : UIViewController {
     let spacer = 20
     let cardWidth = 300
     let cardHeight = 100
+    let fpoColor = UIColor(red:0/255.0, green:0/255.0, blue:0/255.0, alpha:0.15)
     
     // Establishing Views
     let cardView = UIView()
@@ -28,6 +29,7 @@ class MyViewController : UIViewController {
         cardView.layer.shadowOpacity = 0.25
         cardView.layer.shadowOffset = CGSize(width: 0, height: 10)
         cardView.layer.shadowRadius = 10
+        cardView.layer.masksToBounds = true
         
         // Hero Container
         heroView.frame = CGRect(x:0, y:0, width:cardWidth, height: cardHeight)
@@ -35,12 +37,14 @@ class MyViewController : UIViewController {
         
         // Main Label String
         mainLabel.frame = CGRect(x: spacer, y: (spacer+cardHeight), width: 200, height: 30)
+        mainLabel.backgroundColor = fpoColor
         mainLabel.text = "This is a title"
         mainLabel.textColor = .black
         mainLabel.font = .systemFont(ofSize: 22, weight: .semibold)
         
         // Sub Label String
-        subLabel.frame = CGRect(x: spacer, y: ((spacer*2)+cardHeight), width: 200, height: 30)
+        subLabel.frame = CGRect(x: spacer, y: ((spacer + cardHeight)), width: 200, height: 30)
+        subLabel.backgroundColor = fpoColor
         subLabel.text = "This is a sub label and cool awesome yay"
         
         // Adding subviews

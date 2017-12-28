@@ -7,3 +7,8 @@ A collection of useful playground projects to learn the basics of creating UI's 
 Contents:
 - Basics:
   - Creating UI's
+
+
+## Resources
+#### Videos
+- [Making Contstraints in Code](https://youtu.be/6EEMofQG93I)
