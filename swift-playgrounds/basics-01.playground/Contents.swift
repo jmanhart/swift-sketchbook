@@ -17,6 +17,7 @@ class MyViewController : UIViewController {
     let subLabel = UILabel()
     
     override func loadView() {
+        // Setting Parent view
         let view = UIView()
         view.backgroundColor = .gray
         
