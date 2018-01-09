@@ -7,127 +7,228 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		550968408EA97C392F0BFB85 /* Pods_SandBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EBDF9D493AB28FB407B6DBF /* Pods_SandBox.framework */; };
-		5D95682A1FF68E19006C9802 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9568291FF68E19006C9802 /* AppDelegate.swift */; };
-		5D95682C1FF68E19006C9802 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D95682B1FF68E19006C9802 /* ViewController.swift */; };
-		5D95682F1FF68E19006C9802 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D95682D1FF68E19006C9802 /* Main.storyboard */; };
-		5D9568311FF68E19006C9802 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D9568301FF68E19006C9802 /* Assets.xcassets */; };
-		5D9568341FF68E19006C9802 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D9568321FF68E19006C9802 /* LaunchScreen.storyboard */; };
+		5D38A39020054F2B00172173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A38F20054F2B00172173 /* AppDelegate.swift */; };
+		5D38A39220054F2B00172173 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A39120054F2B00172173 /* ViewController.swift */; };
+		5D38A39520054F2B00172173 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A39320054F2B00172173 /* Main.storyboard */; };
+		5D38A39720054F2B00172173 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A39620054F2B00172173 /* Assets.xcassets */; };
+		5D38A39A20054F2B00172173 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D38A39820054F2B00172173 /* LaunchScreen.storyboard */; };
+		5D38A3AA20054F8700172173 /* SandBoxUIFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = 5D38A3A820054F8600172173 /* SandBoxUIFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D38A3AD20054F8700172173 /* SandBoxUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D38A3A620054F8600172173 /* SandBoxUIFramework.framework */; };
+		5D38A3AE20054F8700172173 /* SandBoxUIFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 5D38A3A620054F8600172173 /* SandBoxUIFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		5D38A3B320054FE100172173 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A38F20054F2B00172173 /* AppDelegate.swift */; };
+		5D38A3B52005502300172173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A3B42005502300172173 /* File.swift */; };
+		5D38A3B62005502300172173 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D38A3B42005502300172173 /* File.swift */; };
+		88B3635E79B4B4AAE0EE4FB6 /* Pods_SandBoxUIFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFEC2CA5F36B8AB5A3C103E3 /* Pods_SandBoxUIFramework.framework */; };
+		93FD7A7362F018CC52D592FA /* Pods_SandBox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 38CB8CC7B2CC1D1D43B9FD18 /* Pods_SandBox.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		5D38A3AB20054F8700172173 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5D38A38420054F2B00172173 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5D38A3A520054F8600172173;
+			remoteInfo = SandBoxUIFramework;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		5D38A3B220054F8700172173 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				5D38A3AE20054F8700172173 /* SandBoxUIFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
-		5D9568261FF68E19006C9802 /* SandBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		5D9568291FF68E19006C9802 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		5D95682B1FF68E19006C9802 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		5D95682E1FF68E19006C9802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		5D9568301FF68E19006C9802 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		5D9568331FF68E19006C9802 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5D9568351FF68E19006C9802 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6869459572D2B61572A05AF5 /* Pods-SandBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.debug.xcconfig"; sourceTree = "<group>"; };
-		72F8051AEE543383CA381D0D /* Pods-SandBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.release.xcconfig"; sourceTree = "<group>"; };
-		9EBDF9D493AB28FB407B6DBF /* Pods_SandBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		38CB8CC7B2CC1D1D43B9FD18 /* Pods_SandBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D38A38C20054F2B00172173 /* SandBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D38A38F20054F2B00172173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5D38A39120054F2B00172173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5D38A39420054F2B00172173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5D38A39620054F2B00172173 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5D38A39920054F2B00172173 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5D38A39B20054F2B00172173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D38A3A620054F8600172173 /* SandBoxUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SandBoxUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D38A3A820054F8600172173 /* SandBoxUIFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SandBoxUIFramework.h; sourceTree = "<group>"; };
+		5D38A3A920054F8700172173 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5D38A3B42005502300172173 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		5D38A3B7200550F200172173 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		62A8C6CCECC2B6B8A3588348 /* Pods-SandBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.release.xcconfig"; sourceTree = "<group>"; };
+		746C6F97F2C731F1569F0EFD /* Pods-SandBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.debug.xcconfig"; sourceTree = "<group>"; };
+		7AFBC24354F28CA0C6745825 /* Pods-SandBoxUIFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBoxUIFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandBoxUIFramework/Pods-SandBoxUIFramework.release.xcconfig"; sourceTree = "<group>"; };
+		CDF3B044CD7D3A869CBCD1FD /* Pods-SandBoxUIFramework.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBoxUIFramework.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandBoxUIFramework/Pods-SandBoxUIFramework.debug.xcconfig"; sourceTree = "<group>"; };
+		FFEC2CA5F36B8AB5A3C103E3 /* Pods_SandBoxUIFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandBoxUIFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		5D9568231FF68E19006C9802 /* Frameworks */ = {
+		5D38A38920054F2B00172173 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550968408EA97C392F0BFB85 /* Pods_SandBox.framework in Frameworks */,
+				5D38A3AD20054F8700172173 /* SandBoxUIFramework.framework in Frameworks */,
+				93FD7A7362F018CC52D592FA /* Pods_SandBox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D38A3A220054F8600172173 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				88B3635E79B4B4AAE0EE4FB6 /* Pods_SandBoxUIFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		5514C72047F4A3C04423A145 /* Frameworks */ = {
+		5D38A38320054F2B00172173 = {
 			isa = PBXGroup;
 			children = (
-				9EBDF9D493AB28FB407B6DBF /* Pods_SandBox.framework */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		5D95681D1FF68E19006C9802 = {
-			isa = PBXGroup;
-			children = (
-				5D9568281FF68E19006C9802 /* SandBox */,
-				5D9568271FF68E19006C9802 /* Products */,
-				B32E17B620E52137B3162FD2 /* Pods */,
-				5514C72047F4A3C04423A145 /* Frameworks */,
+				5D38A38E20054F2B00172173 /* SandBox */,
+				5D38A3A720054F8600172173 /* SandBoxUIFramework */,
+				5D38A38D20054F2B00172173 /* Products */,
+				F867320F16BF1FD66CA073CA /* Pods */,
+				5EE1A18D8EBA2FC57ECFFD26 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		5D9568271FF68E19006C9802 /* Products */ = {
+		5D38A38D20054F2B00172173 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5D9568261FF68E19006C9802 /* SandBox.app */,
+				5D38A38C20054F2B00172173 /* SandBox.app */,
+				5D38A3A620054F8600172173 /* SandBoxUIFramework.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5D9568281FF68E19006C9802 /* SandBox */ = {
+		5D38A38E20054F2B00172173 /* SandBox */ = {
 			isa = PBXGroup;
 			children = (
-				5D9568291FF68E19006C9802 /* AppDelegate.swift */,
-				5D95682B1FF68E19006C9802 /* ViewController.swift */,
-				5D95682D1FF68E19006C9802 /* Main.storyboard */,
-				5D9568301FF68E19006C9802 /* Assets.xcassets */,
-				5D9568321FF68E19006C9802 /* LaunchScreen.storyboard */,
-				5D9568351FF68E19006C9802 /* Info.plist */,
+				5D38A3B7200550F200172173 /* MyPlayground.playground */,
+				5D38A38F20054F2B00172173 /* AppDelegate.swift */,
+				5D38A3B42005502300172173 /* File.swift */,
+				5D38A39120054F2B00172173 /* ViewController.swift */,
+				5D38A39320054F2B00172173 /* Main.storyboard */,
+				5D38A39620054F2B00172173 /* Assets.xcassets */,
+				5D38A39820054F2B00172173 /* LaunchScreen.storyboard */,
+				5D38A39B20054F2B00172173 /* Info.plist */,
 			);
 			path = SandBox;
 			sourceTree = "<group>";
 		};
-		B32E17B620E52137B3162FD2 /* Pods */ = {
+		5D38A3A720054F8600172173 /* SandBoxUIFramework */ = {
 			isa = PBXGroup;
 			children = (
-				6869459572D2B61572A05AF5 /* Pods-SandBox.debug.xcconfig */,
-				72F8051AEE543383CA381D0D /* Pods-SandBox.release.xcconfig */,
+				5D38A3A820054F8600172173 /* SandBoxUIFramework.h */,
+				5D38A3A920054F8700172173 /* Info.plist */,
+			);
+			path = SandBoxUIFramework;
+			sourceTree = "<group>";
+		};
+		5EE1A18D8EBA2FC57ECFFD26 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				38CB8CC7B2CC1D1D43B9FD18 /* Pods_SandBox.framework */,
+				FFEC2CA5F36B8AB5A3C103E3 /* Pods_SandBoxUIFramework.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F867320F16BF1FD66CA073CA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				746C6F97F2C731F1569F0EFD /* Pods-SandBox.debug.xcconfig */,
+				62A8C6CCECC2B6B8A3588348 /* Pods-SandBox.release.xcconfig */,
+				CDF3B044CD7D3A869CBCD1FD /* Pods-SandBoxUIFramework.debug.xcconfig */,
+				7AFBC24354F28CA0C6745825 /* Pods-SandBoxUIFramework.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
+/* Begin PBXHeadersBuildPhase section */
+		5D38A3A320054F8600172173 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D38A3AA20054F8700172173 /* SandBoxUIFramework.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
 /* Begin PBXNativeTarget section */
-		5D9568251FF68E19006C9802 /* SandBox */ = {
+		5D38A38B20054F2B00172173 /* SandBox */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5D9568381FF68E19006C9802 /* Build configuration list for PBXNativeTarget "SandBox" */;
+			buildConfigurationList = 5D38A39E20054F2B00172173 /* Build configuration list for PBXNativeTarget "SandBox" */;
 			buildPhases = (
-				36079CD53E2AFA1F71393C5B /* [CP] Check Pods Manifest.lock */,
-				5D9568221FF68E19006C9802 /* Sources */,
-				5D9568231FF68E19006C9802 /* Frameworks */,
-				5D9568241FF68E19006C9802 /* Resources */,
-				E89B480633587906CE018C7D /* [CP] Embed Pods Frameworks */,
-				28EB1F7B86DE3B202C89851A /* [CP] Copy Pods Resources */,
+				1CD448D08FC3999D306628D7 /* [CP] Check Pods Manifest.lock */,
+				5D38A38820054F2B00172173 /* Sources */,
+				5D38A38920054F2B00172173 /* Frameworks */,
+				5D38A38A20054F2B00172173 /* Resources */,
+				5D38A3B220054F8700172173 /* Embed Frameworks */,
+				C6FD57D9925968C405743AB2 /* [CP] Embed Pods Frameworks */,
+				288FB9094180C20F210F08F4 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5D38A3AC20054F8700172173 /* PBXTargetDependency */,
+			);
+			name = SandBox;
+			productName = SandBox;
+			productReference = 5D38A38C20054F2B00172173 /* SandBox.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5D38A3A520054F8600172173 /* SandBoxUIFramework */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5D38A3B120054F8700172173 /* Build configuration list for PBXNativeTarget "SandBoxUIFramework" */;
+			buildPhases = (
+				3F98EA4F785425E5202AE202 /* [CP] Check Pods Manifest.lock */,
+				5D38A3A120054F8600172173 /* Sources */,
+				5D38A3A220054F8600172173 /* Frameworks */,
+				5D38A3A320054F8600172173 /* Headers */,
+				5D38A3A420054F8600172173 /* Resources */,
+				979F3E25D497D87B04B729F3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SandBox;
-			productName = SandBox;
-			productReference = 5D9568261FF68E19006C9802 /* SandBox.app */;
-			productType = "com.apple.product-type.application";
+			name = SandBoxUIFramework;
+			productName = SandBoxUIFramework;
+			productReference = 5D38A3A620054F8600172173 /* SandBoxUIFramework.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		5D95681E1FF68E19006C9802 /* Project object */ = {
+		5D38A38420054F2B00172173 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Manhart, John";
 				TargetAttributes = {
-					5D9568251FF68E19006C9802 = {
+					5D38A38B20054F2B00172173 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					5D38A3A520054F8600172173 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
 					};
 				};
 			};
-			buildConfigurationList = 5D9568211FF68E19006C9802 /* Build configuration list for PBXProject "SandBox" */;
+			buildConfigurationList = 5D38A38720054F2B00172173 /* Build configuration list for PBXProject "SandBox" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,46 +236,39 @@
 				en,
 				Base,
 			);
-			mainGroup = 5D95681D1FF68E19006C9802;
-			productRefGroup = 5D9568271FF68E19006C9802 /* Products */;
+			mainGroup = 5D38A38320054F2B00172173;
+			productRefGroup = 5D38A38D20054F2B00172173 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5D9568251FF68E19006C9802 /* SandBox */,
+				5D38A38B20054F2B00172173 /* SandBox */,
+				5D38A3A520054F8600172173 /* SandBoxUIFramework */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		5D9568241FF68E19006C9802 /* Resources */ = {
+		5D38A38A20054F2B00172173 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D9568341FF68E19006C9802 /* LaunchScreen.storyboard in Resources */,
-				5D9568311FF68E19006C9802 /* Assets.xcassets in Resources */,
-				5D95682F1FF68E19006C9802 /* Main.storyboard in Resources */,
+				5D38A39A20054F2B00172173 /* LaunchScreen.storyboard in Resources */,
+				5D38A39720054F2B00172173 /* Assets.xcassets in Resources */,
+				5D38A39520054F2B00172173 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D38A3A420054F8600172173 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		28EB1F7B86DE3B202C89851A /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SandBox/Pods-SandBox-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		36079CD53E2AFA1F71393C5B /* [CP] Check Pods Manifest.lock */ = {
+		1CD448D08FC3999D306628D7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -192,18 +286,66 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		E89B480633587906CE018C7D /* [CP] Embed Pods Frameworks */ = {
+		288FB9094180C20F210F08F4 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SandBox/Pods-SandBox-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F98EA4F785425E5202AE202 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SandBoxUIFramework-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979F3E25D497D87B04B729F3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SandBoxUIFramework/Pods-SandBoxUIFramework-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C6FD57D9925968C405743AB2 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-SandBox/Pods-SandBox-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/Cheers/Cheers.framework",
+				"${BUILT_PRODUCTS_DIR}/Cartography/Cartography.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cheers.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Cartography.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -213,30 +355,48 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		5D9568221FF68E19006C9802 /* Sources */ = {
+		5D38A38820054F2B00172173 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5D95682C1FF68E19006C9802 /* ViewController.swift in Sources */,
-				5D95682A1FF68E19006C9802 /* AppDelegate.swift in Sources */,
+				5D38A39220054F2B00172173 /* ViewController.swift in Sources */,
+				5D38A3B52005502300172173 /* File.swift in Sources */,
+				5D38A39020054F2B00172173 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5D38A3A120054F8600172173 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D38A3B320054FE100172173 /* AppDelegate.swift in Sources */,
+				5D38A3B62005502300172173 /* File.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		5D38A3AC20054F8700172173 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5D38A3A520054F8600172173 /* SandBoxUIFramework */;
+			targetProxy = 5D38A3AB20054F8700172173 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
-		5D95682D1FF68E19006C9802 /* Main.storyboard */ = {
+		5D38A39320054F2B00172173 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D95682E1FF68E19006C9802 /* Base */,
+				5D38A39420054F2B00172173 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		5D9568321FF68E19006C9802 /* LaunchScreen.storyboard */ = {
+		5D38A39820054F2B00172173 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5D9568331FF68E19006C9802 /* Base */,
+				5D38A39920054F2B00172173 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -244,7 +404,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		5D9568361FF68E19006C9802 /* Debug */ = {
+		5D38A39C20054F2B00172173 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -301,7 +461,7 @@
 			};
 			name = Debug;
 		};
-		5D9568371FF68E19006C9802 /* Release */ = {
+		5D38A39D20054F2B00172173 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,10 +511,11 @@
 			};
 			name = Release;
 		};
-		5D9568391FF68E19006C9802 /* Debug */ = {
+		5D38A39F20054F2B00172173 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6869459572D2B61572A05AF5 /* Pods-SandBox.debug.xcconfig */;
+			baseConfigurationReference = 746C6F97F2C731F1569F0EFD /* Pods-SandBox.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SandBox/Info.plist;
@@ -366,10 +527,11 @@
 			};
 			name = Debug;
 		};
-		5D95683A1FF68E19006C9802 /* Release */ = {
+		5D38A3A020054F2B00172173 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 72F8051AEE543383CA381D0D /* Pods-SandBox.release.xcconfig */;
+			baseConfigurationReference = 62A8C6CCECC2B6B8A3588348 /* Pods-SandBox.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = SandBox/Info.plist;
@@ -381,28 +543,85 @@
 			};
 			name = Release;
 		};
+		5D38A3AF20054F8700172173 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDF3B044CD7D3A869CBCD1FD /* Pods-SandBoxUIFramework.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SandBoxUIFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manhart.SandBoxUIFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		5D38A3B020054F8700172173 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7AFBC24354F28CA0C6745825 /* Pods-SandBoxUIFramework.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = SandBoxUIFramework/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = manhart.SandBoxUIFramework;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5D9568211FF68E19006C9802 /* Build configuration list for PBXProject "SandBox" */ = {
+		5D38A38720054F2B00172173 /* Build configuration list for PBXProject "SandBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D9568361FF68E19006C9802 /* Debug */,
-				5D9568371FF68E19006C9802 /* Release */,
+				5D38A39C20054F2B00172173 /* Debug */,
+				5D38A39D20054F2B00172173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5D9568381FF68E19006C9802 /* Build configuration list for PBXNativeTarget "SandBox" */ = {
+		5D38A39E20054F2B00172173 /* Build configuration list for PBXNativeTarget "SandBox" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5D9568391FF68E19006C9802 /* Debug */,
-				5D95683A1FF68E19006C9802 /* Release */,
+				5D38A39F20054F2B00172173 /* Debug */,
+				5D38A3A020054F2B00172173 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5D38A3B120054F8700172173 /* Build configuration list for PBXNativeTarget "SandBoxUIFramework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5D38A3AF20054F8700172173 /* Debug */,
+				5D38A3B020054F8700172173 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 5D95681E1FF68E19006C9802 /* Project object */;
+	rootObject = 5D38A38420054F2B00172173 /* Project object */;
 }

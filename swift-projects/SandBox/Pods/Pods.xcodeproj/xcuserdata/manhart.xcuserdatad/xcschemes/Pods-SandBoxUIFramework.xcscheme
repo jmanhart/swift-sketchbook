@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '176ABD3583C5B442DAD6F4358213E30B'
-               BlueprintName = 'Pods-SandBox'
+               BlueprintIdentifier = 'D486B09B7632977A5C7DC7E9FE9A93DC'
+               BlueprintName = 'Pods-SandBoxUIFramework'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Pods-SandBox.framework'>
+               BuildableName = 'Pods-SandBoxUIFramework.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

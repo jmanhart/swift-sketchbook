@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = 'C279FA6C6C73D2194A8215BAE29137F6'
-               BlueprintName = 'Cheers'
+               BlueprintIdentifier = '544212980401A6DA7806F65EAD8C6637'
+               BlueprintName = 'Cartography'
                ReferencedContainer = 'container:Pods.xcodeproj'
-               BuildableName = 'Cheers.framework'>
+               BuildableName = 'Cartography.framework'>
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

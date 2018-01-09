@@ -4,12 +4,17 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Cheers.xcscheme</key>
+		<key>Cartography.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
 		<key>Pods-SandBox.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods-SandBoxUIFramework.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>

@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double CheersVersionNumber;
-FOUNDATION_EXPORT const unsigned char CheersVersionString[];
+FOUNDATION_EXPORT double Pods_SandBoxUIFrameworkVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_SandBoxUIFrameworkVersionString[];
 
