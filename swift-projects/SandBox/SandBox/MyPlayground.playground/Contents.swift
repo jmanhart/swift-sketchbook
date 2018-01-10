@@ -3,17 +3,22 @@
 import UIKit
 import PlaygroundSupport
 import SandBoxUIFramework
-
+import Cartography
 
 class MyViewController : UIViewController {
     override func loadView() {
         let view = UIView()
-        view.backgroundColor = .red
+        view.backgroundColor = .gray
 
         let label = UILabel()
-        label.frame = CGRect(x: 150, y: 200, width: 200, height: 20)
+        label.frame = CGRect(x: 150, y: 200, width: 200, height: 200)
         label.text = "Hello World!"
         label.textColor = .black
+        
+        constrain(label){ label in
+            label.height == 20
+            
+        }
         
         view.addSubview(label)
         self.view = view
