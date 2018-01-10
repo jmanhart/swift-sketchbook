@@ -3,44 +3,36 @@
 import UIKit
 import PlaygroundSupport
 import SandBoxUIFramework
-import Cartography
+import Masonry
 
 class MyViewController : UIViewController {
+    
     override func loadView() {
         let view = UIView()
+        view.frame = CGRect(x: 0, y: 0, width: 375, height: 667)
         view.backgroundColor = .gray
         
-        /*
-        let boxWrapper = UIView()
-        boxWrapper.frame = CGRect(x: 40, y:0, width: 300, height: 500)
-        boxWrapper.backgroundColor = .red
-        */
-        
         let box1 = UIView()
-        box1.frame = CGRect(x: 100, y: 200, width: 100, height: 100)
-        box1.backgroundColor = .blue
-        
-        let box2 = UIView()
-        box2.frame = CGRect(x: 200, y:200, width: 100, height: 100)
-        box2.backgroundColor = .green
-        
-        /* constrain(boxWrapper) { boxWrapper in
-            boxWrapper.width == boxWrapper.self.width
-            boxWrapper.height == boxWrapper.self.height
-            
-        }*/
-        
-        constrain(box1, box2) { box1, box2 in
-            box1.width == (box1.superview!.width - 100) * 0.5
-            box2.width == box1.width - 100
-            
-        }
-
-        
+        box1.backgroundColor = .white
         
         view.addSubview(box1)
-        view.addSubview(box2)
+        
+        box1.mas_makeConstraints { (make) in
+            _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
+            _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
+            _ = make?.height.equalTo()(200)
+            _ = make?.centerY.equalTo()(view.mas_centerY)
+            _ = make?.top.equalTo()(view.mas_top)?.offset()(20)
+        }
+        
+        
+        // Declaring the view
         self.view = view
+        
+        // Prints out the View Dims
+        view.frame
+        
+        
     }
 }
 // Present the view controller in the Live View window

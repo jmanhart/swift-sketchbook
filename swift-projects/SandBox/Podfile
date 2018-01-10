@@ -15,5 +15,6 @@ target 'SandBoxUIFramework' do
 
   # Pods for SandBoxUIFramework
   pod 'Cartography'
+  pod 'Masonry'
 
 end

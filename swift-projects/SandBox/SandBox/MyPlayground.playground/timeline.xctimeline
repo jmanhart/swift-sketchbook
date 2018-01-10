@@ -2,5 +2,10 @@
 <Timeline
    version = "3.0">
    <TimelineItems>
+      <LoggerValueHistoryTimelineItem
+         documentLocation = "file:///Users/manhart/Documents/02_Dev/swift-sketchbook/swift-projects/SandBox/SandBox/MyPlayground.playground#CharacterRangeLen=285&amp;CharacterRangeLoc=427&amp;EndingColumnNumber=13&amp;EndingLineNumber=23&amp;StartingColumnNumber=0&amp;StartingLineNumber=16&amp;Timestamp=537306606.9928989"
+         selectedRepresentationIndex = "0"
+         shouldTrackSuperviewWidth = "NO">
+      </LoggerValueHistoryTimelineItem>
    </TimelineItems>
 </Timeline>

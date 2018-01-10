@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D486B09B7632977A5C7DC7E9FE9A93DC"
+               BlueprintIdentifier = "1433A80E962B7348E909FE8ACCE817EC"
                BuildableName = "Pods_SandBoxUIFramework.framework"
                BlueprintName = "Pods-SandBoxUIFramework"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -47,7 +47,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D486B09B7632977A5C7DC7E9FE9A93DC"
+            BlueprintIdentifier = "1433A80E962B7348E909FE8ACCE817EC"
             BuildableName = "Pods_SandBoxUIFramework.framework"
             BlueprintName = "Pods-SandBoxUIFramework"
             ReferencedContainer = "container:Pods.xcodeproj">
