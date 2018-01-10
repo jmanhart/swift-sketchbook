@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:SandBox/Animation01.playground">
+   </FileRef>
+   <FileRef
       location = "group:SandBox.xcodeproj">
    </FileRef>
    <FileRef
