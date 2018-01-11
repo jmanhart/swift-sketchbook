@@ -9,7 +9,6 @@ class MyViewController : UIViewController {
     
     let cardView = UIView()
     
-    
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .gray
@@ -17,7 +16,6 @@ class MyViewController : UIViewController {
         
         // CardView Styling
         cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
-        // cardView.frame = CGSize(width: 100, height: 100)
         cardView.backgroundColor = .white
         
         // Adding Subviews
@@ -27,7 +25,7 @@ class MyViewController : UIViewController {
             _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
             _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
             _ = make?.centerY.equalTo()(view.mas_centerY)
-            _ = make?.top.equalTo()(view.mas_top)?.offset()(100)
+            _ = make?.top.equalTo()(view.mas_top)?.offset()(50)
         }
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(cardViewTapped))
@@ -37,10 +35,12 @@ class MyViewController : UIViewController {
         self.view = view
     }
     
+    // Custom object - swift a box
+    // How to create own class
     
     @objc func cardViewTapped () {
         let animator = UIViewPropertyAnimator(duration: 0.7, dampingRatio: 0.7) {
-            // self.cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
+            self.cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
             self.cardView.backgroundColor = .blue
         }
         animator.startAnimation()
