@@ -9,9 +9,11 @@ class MyViewController : UIViewController {
     
     let cardView = UIView()
     
+    
     override func loadView() {
         let view = UIView()
         view.backgroundColor = .gray
+        
         
         // CardView Styling
         cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
@@ -25,7 +27,7 @@ class MyViewController : UIViewController {
             _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
             _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
             _ = make?.centerY.equalTo()(view.mas_centerY)
-            _ = make?.top.equalTo()(view.mas_top)?.offset()(10)
+            _ = make?.top.equalTo()(view.mas_top)?.offset()(100)
         }
         
         let tap = UITapGestureRecognizer(target: self, action: #selector(cardViewTapped))
