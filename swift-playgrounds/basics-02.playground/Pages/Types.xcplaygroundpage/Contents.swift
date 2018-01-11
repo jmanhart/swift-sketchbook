@@ -40,6 +40,44 @@ var version = 3.0 // Double
 
 let isAwesome = true
 
+/*
+ ---------------
+ Type Checking
+     String,
+     Double,
+     Int,
+     Bool
+ 
+ TypeInfernce = Automatically deduce type (compile)
+ 
+ Type Anotation = Foo: String
+ 
+ ---------------
+ */
+
+let bestPlayer: String = "Tony Hawk"
+let bestScore: Double = 300.3
+let yearOfDeath: Int = 1993
+let hallOfFame: Bool = true
+
+
+
+let firstValue: Int = 2
+let secondValue: Int = 8
+
+var product = firstValue*secondValue
+var output = "The product of \(firstValue) times \(secondValue) is \(product)"
+
+
+
+
+
+
+
+
+
+
+
 
 
 
