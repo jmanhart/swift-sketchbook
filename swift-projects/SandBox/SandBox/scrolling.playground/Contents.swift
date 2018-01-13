@@ -7,84 +7,86 @@ import Masonry
 
 class MyViewController : UIViewController {
     
-    let cardView = UIView()
+    
+    let labelTwo: UILabel = {
+        let label = UILabel()
+        label.text = "Scroll Bottom"
+        label.backgroundColor = .green
+        return label
+    }()
     
     override func loadView() {
+
+        let screensize: CGRect = UIScreen.main.bounds
+        let screenWidth = screensize.width
+        let screenHeight = screensize.height
+        var scrollView: UIScrollView!
+        
+        scrollView = UIScrollView(frame: CGRect(x: 0, y: 0, width: screenWidth, height: screenHeight))
+        scrollView.flashScrollIndicators()
+        scrollView.backgroundColor = .brown
+        
         let view = UIView()
         view.backgroundColor = .gray
         
+
+        scrollView.contentSize = CGSize(width: screenWidth, height: 5000)
         
-        // CardView Styling
-        cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
-        cardView.backgroundColor = .white
+    
+        scrollView.addSubview(labelTwo)
+        view.addSubview(scrollView)
         
-        // Adding Subviews
-        view.addSubview(cardView)
-        
-        cardView.mas_makeConstraints { (make) in
+        labelTwo.mas_makeConstraints { (make) in
             _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
             _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
-            _ = make?.centerY.equalTo()(view.mas_centerY)
-            _ = make?.top.equalTo()(view.mas_top)?.offset()(50)
+//            _ = make?.top.equalTo()(view.mas_top)?.offset()(20)
         }
         
-        let tap = UITapGestureRecognizer(target: self, action: #selector(cardViewTapped))
-        cardView.addGestureRecognizer(tap)
-        cardView.isUserInteractionEnabled = true
+
+        
+        /*
+        labelTwo.mas_makeConstraints { (make) in
+            _ = make?.left.equalTo()(scrollView.mas_left)?.offset()(20)
+            _ = make?.right.equalTo()(scrollView.mas_right)?.offset()(-20)
+            _ = make?.centerY.equalTo()(scrollView.mas_centerY)
+            _ = make?.top.equalTo()(scrollView.mas_top)?.offset()(40)
+        }
+        */
+        
         
         self.view = view
     }
-    
-    // Custom object - swift a box
-    // How to create own class
-    
-    @objc func cardViewTapped () {
-        let animator = UIViewPropertyAnimator(duration: 0.7, dampingRatio: 0.7) {
-            self.cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
-            self.cardView.backgroundColor = .blue
-        }
-        animator.startAnimation()
-    }
+
 }
 // Present the view controller in the Live View window
 PlaygroundPage.current.liveView = MyViewController()
 
-
-
-
-
-
-
-
-
-
 /*
- override func loadView() {
- let view = UIView()
- view.backgroundColor = .gray
+ let contentView = UIView(frame: CGRect(x: 0, y: 0, width: 5000, height: 5000))
+ contentView.backgroundColor = .green
  
- // CardView Styling
- cardView.frame = CGRect(x: 100, y:100, width: 100, height: 100)
- cardView.backgroundColor = .white
+ let scrollView = UIScrollView()
+ scrollView.contentSize = contentView.frame.size
+ scrollView.addSubview(contentView)
+ scrollView.flashScrollIndicators()
+ scrollView.backgroundColor = .white
  
- // Adding Subviews
- view.addSubview(cardView)
+ self.view = scrollView
  
- // Tap Event
- let tap = UITapGestureRecognizer(target: self, action: #selector(cardViewTapped))
- cardView.addGestureRecognizer(tap)
- cardView.isUserInteractionEnabled = true
  
- self.view = view
+ NSLayoutConstraint(item: labelTwo, attribute: .leading, relatedBy: .equal, toItem: scrollView, attribute: .leadingMargin, multiplier: 1, constant: 10)
+ NSLayoutConstraint(item: labelTwo, attribute: .width, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 200)
+ NSLayoutConstraint(item: labelTwo, attribute: .top, relatedBy: .equal, toItem: scrollView, attribute: .topMargin, multiplier: 1, constant: 10)
+ NSLayoutConstraint(item: labelTwo, attribute: .height, relatedBy: .equal, toItem: nil, attribute: .notAnAttribute, multiplier: 1, constant: 30)
+ 
+ 
+ labelTwo.mas_makeConstraints { (make) in
+ _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
+ _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
+ _ = make?.centerY.equalTo()(view.mas_centerY)
+ _ = make?.top.equalTo()(view.mas_top)?.offset()(40)
  }
  
- // End State Post Tap
- @objc func cardViewTapped () {
- let animator = UIViewPropertyAnimator(duration: 0.7, dampingRatio: 0.7) {
- self.cardView.frame = CGRect(x: 100, y:100, width: 200, height: 200)
- self.cardView.backgroundColor = .blue
- }
- 
- animator.startAnimation()
- }
  */
+
+
