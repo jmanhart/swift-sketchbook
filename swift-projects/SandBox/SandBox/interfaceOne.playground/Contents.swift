@@ -22,14 +22,20 @@ class MyViewController : UIViewController {
         return card
     }()
     
+    let cardTwo = UIView()
+    
+    let cardPadding: CGFloat = 3
+    
     override func loadView() {
         
-        /*
         let screensize: CGRect = UIScreen.main.bounds
         let screenWidth = screensize.width
         let screenHeight = screensize.height
-        */
+        
 
+        
+        cardTwo.frame = CGRect(x: 0, y: 200, width: (screenWidth/cardPadding) , height: screenHeight/5)
+        cardTwo.backgroundColor = .green
         
 
         
@@ -45,14 +51,7 @@ class MyViewController : UIViewController {
         
 
         view.addSubview(cardOne)
-        
-        
-        cardOne.mas_makeConstraints { (make) in
-            _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
-            _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
-            _ = make?.centerY.equalTo()(view.mas_centerY)
-        }
-        
+        view.addSubview(cardTwo)
         
         
         self.view = view
@@ -72,6 +71,18 @@ PlaygroundPage.current.liveView = MyViewController()
 
 
 /*
+ cardOne.mas_makeConstraints { (make) in
+ _ = make?.left.equalTo()(view.mas_left)?.offset()(20)
+ _ = make?.right.equalTo()(view.mas_right)?.offset()(-20)
+ _ = make?.centerY.equalTo()(view.mas_centerY)
+ }
+
+ 
+ let screensize: CGRect = UIScreen.main.bounds
+ let screenWidth = screensize.width
+ let screenHeight = screensize.height
+ 
+ 
  let contentView = UIView(frame: CGRect(x: 0, y: 0, width: 5000, height: 5000))
  contentView.backgroundColor = .green
  
