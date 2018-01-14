@@ -48,6 +48,7 @@
 
 /* Begin PBXFileReference section */
 		38CB8CC7B2CC1D1D43B9FD18 /* Pods_SandBox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SandBox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D2B8F01200AD6C40001B994 /* interfaceOne.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = interfaceOne.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5D38A38C20054F2B00172173 /* SandBox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SandBox.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5D38A38F20054F2B00172173 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5D38A39120054F2B00172173 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -116,6 +117,7 @@
 				5D38A38F20054F2B00172173 /* AppDelegate.swift */,
 				5D6783F2200ABB2F00CFE6B9 /* scrolling.playground */,
 				5D38A3B42005502300172173 /* File.swift */,
+				5D2B8F01200AD6C40001B994 /* interfaceOne.playground */,
 				5D38A39120054F2B00172173 /* ViewController.swift */,
 				5D38A39320054F2B00172173 /* Main.storyboard */,
 				5D38A39620054F2B00172173 /* Assets.xcassets */,
