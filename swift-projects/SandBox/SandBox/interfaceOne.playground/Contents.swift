@@ -7,52 +7,30 @@ import Masonry
 
 class MyViewController : UIViewController {
     
+    // Viewer Default Dimensions
+    let screenWidth: CGFloat = 375
+    let screenHeight: CGFloat = 667
     
-    let labelTwo: UILabel = {
-        let label = UILabel()
-        label.text = "Scroll Bottom"
-        label.backgroundColor = .green
-        return label
-    }()
-    
-    let cardOne: UIView = {
-        let cardSize = CGRect(x: 0, y: 0, width: 100, height: 100)
-        let card = UIView(frame:cardSize)
-        card.backgroundColor = .white
-        return card
-    }()
-    
-    let cardTwo = UIView()
-    
-    let cardPadding: CGFloat = 3
-    
+    let cardPadding: CGFloat = 10
+
+
     override func loadView() {
-        
-        let screensize: CGRect = UIScreen.main.bounds
-        let screenWidth = screensize.width
-        let screenHeight = screensize.height
-        
-
-        
-        cardTwo.frame = CGRect(x: 0, y: 200, width: (screenWidth/cardPadding) , height: screenHeight/5)
-        cardTwo.backgroundColor = .green
-        
-
-        
+    
         let view = UIView()
         view.backgroundColor = .gray
         
+        let cardTwo = UIView()
+        cardTwo.frame = CGRect(x: 0, y: 0, width: screenWidth , height: screenHeight)
+        cardTwo.backgroundColor = .white
         
-
-        
-
-        
-        
-        
-
-        view.addSubview(cardOne)
         view.addSubview(cardTwo)
         
+        cardTwo.mas_makeConstraints { (make) in
+            _ = make?.left.equalTo()(view.mas_left)?.offset()(self.cardPadding)
+            _ = make?.right.equalTo()(view.mas_right)?.offset()(-(self.cardPadding))
+            _ = make?.top.equalTo()(view.mas_top)?.offset()(self.cardPadding)
+            _ = make?.bottom.equalTo()(view.mas_bottom)?.offset()(-(self.cardPadding))
+        }
         
         self.view = view
         
@@ -77,6 +55,22 @@ PlaygroundPage.current.liveView = MyViewController()
  _ = make?.centerY.equalTo()(view.mas_centerY)
  }
 
+ 
+ let labelTwo: UILabel = {
+ let label = UILabel()
+ label.text = "Scroll Bottom"
+ label.backgroundColor = .green
+ return label
+ }()
+ 
+ let cardOne: UIView = {
+ let cardSize = CGRect(x: 0, y: 0, width: 100, height: 100)
+ let card = UIView(frame:cardSize)
+ card.backgroundColor = .white
+ return card
+ }()
+ 
+  let screensize: CGRect = UIScreen.main.bounds
  
  let screensize: CGRect = UIScreen.main.bounds
  let screenWidth = screensize.width
