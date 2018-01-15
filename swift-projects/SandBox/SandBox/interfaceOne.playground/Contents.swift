@@ -10,26 +10,37 @@ class MyViewController : UIViewController {
     // Viewer Default Dimensions
     let screenWidth: CGFloat = 375
     let screenHeight: CGFloat = 667
-    
     let cardPadding: CGFloat = 10
 
+    
 
+    
     override func loadView() {
     
         let view = UIView()
         view.backgroundColor = .gray
         
-        let cardTwo = UIView()
-        cardTwo.frame = CGRect(x: 0, y: 0, width: screenWidth , height: screenHeight)
-        cardTwo.backgroundColor = .white
+        let mainLabel = UILabel()
+        mainLabel.text = "This is a String"
+        mainLabel.backgroundColor = .green
         
-        view.addSubview(cardTwo)
+        let cardWrapper = UIView()
+        cardWrapper.frame = CGRect(x: 0, y: 0, width: screenWidth , height: screenHeight)
+        cardWrapper.backgroundColor = .yellow
         
-        cardTwo.mas_makeConstraints { (make) in
+        view.addSubview(cardWrapper)
+        cardWrapper.addSubview(mainLabel)
+        
+        cardWrapper.mas_makeConstraints { (make) in
             _ = make?.left.equalTo()(view.mas_left)?.offset()(self.cardPadding)
             _ = make?.right.equalTo()(view.mas_right)?.offset()(-(self.cardPadding))
             _ = make?.top.equalTo()(view.mas_top)?.offset()(self.cardPadding)
             _ = make?.bottom.equalTo()(view.mas_bottom)?.offset()(-(self.cardPadding))
+        }
+        
+        mainLabel.mas_makeConstraints { (make) in
+            _ = make?.left.equalTo()(cardWrapper.mas_left)?.offset()(20)
+            _ = make?.right.equalTo()(cardWrapper.mas_right)?.offset()(-20)
         }
         
         self.view = view
