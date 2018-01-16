@@ -12,6 +12,7 @@ class MyViewController : UIViewController {
     let screenHeight: CGFloat = 667
     let cardPadding: CGFloat = 10
 
+    let cardHeight: CGFloat = 300
     
 
     
@@ -20,28 +21,37 @@ class MyViewController : UIViewController {
         let view = UIView()
         view.backgroundColor = .gray
         
-        let mainLabel = UILabel()
-        mainLabel.text = "This is a String"
-        mainLabel.backgroundColor = .green
         
         let cardWrapper = UIView()
-        cardWrapper.frame = CGRect(x: 0, y: 0, width: screenWidth , height: screenHeight)
-        cardWrapper.backgroundColor = .yellow
+        cardWrapper.backgroundColor = .white
+        
+        let mainLabel = UILabel()
+        mainLabel.text = "This is a String"
+        mainLabel.frame = CGRect(x: 0, y: 0, width: 100 , height: 100)
+        mainLabel.backgroundColor = .green
+        
         
         view.addSubview(cardWrapper)
         cardWrapper.addSubview(mainLabel)
         
+        
+        // Making Constraints
         cardWrapper.mas_makeConstraints { (make) in
-            _ = make?.left.equalTo()(view.mas_left)?.offset()(self.cardPadding)
-            _ = make?.right.equalTo()(view.mas_right)?.offset()(-(self.cardPadding))
             _ = make?.top.equalTo()(view.mas_top)?.offset()(self.cardPadding)
-            _ = make?.bottom.equalTo()(view.mas_bottom)?.offset()(-(self.cardPadding))
+            _ = make?.right.equalTo()(view.mas_right)?.offset()(-(self.cardPadding))
+            _ = make?.bottom.equalTo()(view.mas_centerY)?.offset()(-(self.cardPadding))
+            _ = make?.left.equalTo()(view.mas_left)?.offset()(self.cardPadding)
         }
         
         mainLabel.mas_makeConstraints { (make) in
+            _ = make?.centerY.equalTo()(cardWrapper.mas_centerY)
             _ = make?.left.equalTo()(cardWrapper.mas_left)?.offset()(20)
             _ = make?.right.equalTo()(cardWrapper.mas_right)?.offset()(-20)
+            
+            _ = make?.top.equalTo()(cardWrapper.mas_top)?.offset()(self.cardPadding)
+            
         }
+        
         
         self.view = view
         
