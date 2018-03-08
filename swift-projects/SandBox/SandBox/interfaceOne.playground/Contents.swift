@@ -5,14 +5,38 @@ import PlaygroundSupport
 import SandBoxUIFramework
 import Masonry
 
-class MyViewController : UIViewController {
+class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let view = UITableViewCell()
+        view.backgroundColor = UIColor.green
+        view.frame.size.height = 20
+        view.frame.size.width = 20
+ 
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let view = UIView()
+        view.backgroundColor = UIColor.blue
+        return view
+    }
+    
+    func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {
+        return UIView()
+    }
+    
     
     // Viewer Default Dimensions
     let screenWidth: CGFloat = 375
     let screenHeight: CGFloat = 667
-    let cardPadding: CGFloat = 10
+    let cardPadding: CGFloat = 20
 
     let cardHeight: CGFloat = 300
+
     
 
     
@@ -24,12 +48,15 @@ class MyViewController : UIViewController {
         
         let cardWrapper = UIView()
         cardWrapper.backgroundColor = .white
+
         
         let mainLabel = UILabel()
         mainLabel.text = "This is a String"
         mainLabel.frame = CGRect(x: 0, y: 0, width: 100 , height: 100)
-        mainLabel.backgroundColor = .green
+        //mainLabel.backgroundColor = .green
         
+        
+    
         
         view.addSubview(cardWrapper)
         cardWrapper.addSubview(mainLabel)
