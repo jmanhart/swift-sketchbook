@@ -63,6 +63,7 @@
 		5D38A3B7200550F200172173 /* MyPlayground.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = MyPlayground.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5D6783F2200ABB2F00CFE6B9 /* scrolling.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = scrolling.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		5DA39789200D9334005F48DF /* interfaceTwo.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = interfaceTwo.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		5DE561CF20ED575500C82B00 /* UI-draft-I.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "UI-draft-I.playground"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		62A8C6CCECC2B6B8A3588348 /* Pods-SandBox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.release.xcconfig"; sourceTree = "<group>"; };
 		746C6F97F2C731F1569F0EFD /* Pods-SandBox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBox.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SandBox/Pods-SandBox.debug.xcconfig"; sourceTree = "<group>"; };
 		7AFBC24354F28CA0C6745825 /* Pods-SandBoxUIFramework.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SandBoxUIFramework.release.xcconfig"; path = "Pods/Target Support Files/Pods-SandBoxUIFramework/Pods-SandBoxUIFramework.release.xcconfig"; sourceTree = "<group>"; };
@@ -115,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				5D38A3B7200550F200172173 /* MyPlayground.playground */,
+				5DE561CF20ED575500C82B00 /* UI-draft-I.playground */,
 				5D38A38F20054F2B00172173 /* AppDelegate.swift */,
 				5D6783F2200ABB2F00CFE6B9 /* scrolling.playground */,
 				5D38A3B42005502300172173 /* File.swift */,

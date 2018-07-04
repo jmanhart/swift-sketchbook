@@ -13,7 +13,7 @@ class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let view = UITableViewCell()
         view.backgroundColor = UIColor.green
-        view.frame.size.height = 20
+        view.frame.size.height = 30
         view.frame.size.width = 20
  
         return view
@@ -53,7 +53,7 @@ class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataS
         let mainLabel = UILabel()
         mainLabel.text = "This is a String"
         mainLabel.frame = CGRect(x: 0, y: 0, width: 100 , height: 100)
-        //mainLabel.backgroundColor = .green
+        mainLabel.backgroundColor = .green
         
         
     
