@@ -8,6 +8,7 @@ Contents:
 - Basics:
   - Creating UI's
 
+## Swift UI Basics
 
 ## Resources
 #### Videos
